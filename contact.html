@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QueraProject</title>
+    <!-- <link rel="stylesheet" href="./style.css" /> -->
+    <!-- <link rel="stylesheet" href="./input.css" /> -->
+    <link href="./output.css" rel="stylesheet" />
+    <!-- <script src="./tailwinsssd.config.js"></script> -->
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+  </head>
+  <body>
+    <header>
+      <nav
+        class="m-auto flex justify-between py-[24px] px-[10%] bg-on-primary-light"
+      >
+        <div class="flex justify-between w-[516px]">
+          <div class="font-semibold">کوئرا لیست</div>
+          <ul class="flex justify-between w-[349px]">
+            <li><a href="index.html">صفحه اصلی</a></li>
+            <li><a href="about.html">درباره ما </a></li>
+            <li><a class="text-primay" href="contact.html">ارتباط با ما</a></li>
+          </ul>
+        </div>
+        <div class="flex gap-[8px]">
+          <button
+            class="bg-primay text-on-primary-light w-[167px] h-[40px] py-[8px] px-[24px] rounded-md"
+          >
+            <a href="#">ورود به اپلیکیشن</a>
+          </button>
+          <button class="flex w-[40px] h-[40px] border rounded-md">
+            <img
+              src="./assets/darkAndLightIcon.png"
+              alt="dark and light button"
+              class="w-[60%] h-[60%] m-auto"
+            />
+          </button>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="flex gap-8 mx-56 border border-neutral_4 rounded-xl mt-28">
+        <div class="relative w-[50%] py-10 px-8">
+          <h1 class="font-bold text-4xl">تماس با ما</h1>
+          <p class="font-semibold text-neutral_8 mt-7">چیزی هست که بخوای ازم بپرسی؟ خوشحال میشم بتونم بهت کمکی کنم.</p>
+          <div class="flex mt-8">
+            <div>
+              <img class="w-6" src="/assets/phone.png" alt="phone" />
+            </div>
+            <p dir="ltr" class="pr-2">۰۹۱۲ ۱۲۳۴۵۶۷</p>
+          </div>
+          <div class="flex mt-8">
+            <div>
+              <img class="w-6" src="/assets/mail.png" alt="mail" />
+            </div>
+            <p class="pr-2">QueraList@gmail.com</p>
+          </div>
+          <div class="flex absolute bottom-10">
+            <img class="w-8 ml-8" src="./assets/github.png" alt="github">
+            <img class="w-8 ml-8" src="./assets/twitter.png" alt="twitter">
+            <img class="w-8 ml-8" src="./assets/linkedin.png" alt="linkedin">
+          </div>
+        </div>
+        <div>
+          <img class="py-10" src="./assets/line.png" alt="">
+        </div>
+        <div class="w-[50%] ml-8">
+          <form action="#" method="post">
+            <div class="flex gap-6 mt-10 w-[100%]">
+              <div class="w-[50%]">
+                <label class="block text-base font-semibold" for="name">نام:</label>
+                <input class="w-[100%] h-11 pr-6 border border-neutral_7 rounded-lg focus:outline-none mt-1" type="text" name="name" placeholder="نام شما">
+              </div>
+
+              <div class="w-[50%]">
+                <label class="block text-base font-semibold" for="familyname">نام خانوادگی:</label>
+                <input class="w-[100%] h-11 pr-6 border border-neutral_7 rounded-lg focus:outline-none mt-1" type="text" name="familyname" placeholder="نام خانوادگی شما">
+              </div>
+            </div>
+
+            <div>
+              <label class="block mt-8 text-base font-semibold " for="email">ایمیل:</label>
+              <input class="w-[100%] h-11 pr-6 border border-neutral_7 rounded-lg focus:outline-none mt-1" type="email" name="email" placeholder="ایمیل">
+            </div>
+            <div>
+              <label class="block mt-8 text-base font-semibold " for="phone">شماره تماس:</label>
+              <input class="w-[100%] h-11 pr-6 border border-neutral_7 rounded-lg focus:outline-none mt-1" type="number" name="phone" placeholder="شماره تماس شما">
+            </div>
+            <div>
+              <label class="block mt-8 text-base font-semibold " for="name">متن:</label>
+              <textarea class="w-[100%] h-32 p-4 border border-neutral_7 rounded-lg focus:outline-none mt-1 resize-none" type="text" name="name" placeholder="متن پیام شما"></textarea>
+            </div>
+            <button class=" mt-8 w-[100%] h-11 pr-6 border border-neutral_7 rounded-lg focus:outline-none bg-primay text-neutral_1 font-bold text-lg" type="submit">ارسال پیام</button>
+          </form>
+        </div>
+      </div>
+    </main>
+<footer
+      class="mt-32 flex flex-col px-[160px] justify-center items-center"
+    >
+      <div class="flex m-auto items-center">
+        <img
+          class="inline h-[1px] content-center"
+          src="assets/Vector 23.png"
+          alt="vector"
+        />
+        <p class="mx-4">کوئرالیست</p>
+        <img
+          class="inline h-[1px] content-center"
+          src="assets/Vector 23.png"
+          alt="vector"
+        />
+      </div>
+      <div class="w-[100%] flex justify-between items-center">
+      <div class="flex flex-col justify-between mt-20 w-80">
+        <div>
+          <div>
+            <div class="flex mt-6">
+              <div class="pl-4">
+                <img class="w-6" src="/assets/fax.png" alt="fax" />
+              </div>
+              <p>فکس: ۴۴۴۴۵۵۶۶ - ۰۲۱</p>
+            </div>
+          </div>
+          </div>
+          <div>
+            <div class="flex mt-6">
+              <div class="pl-4">
+                <img class="w-6" src="/assets/phone.png" alt="phone" />
+              </div>
+              <p>تلفن پشتیبانی: ۴۴۴۴۵۵۶۶ - ۰۲۱</p>
+            </div>
+          </div>
+          <div>
+            <div class="flex mt-6">
+              <div class="pl-4">
+                <img class="w-8 h-5" src="/assets/location.png" alt="location" />
+              </div>
+              <p>آدرس دفتر مرکزی: پونک - خیابان اشرفی اصفهانی - خیابان صبحدل- بن بست شب بو</p>
+            </div>
+          </div>
+        </div>
+        <div class="w-80 mt-20">
+          <p class="text-neutral_9 font-bold">با ما در ارتباط باش</p>
+          <p class="text-neutral_9">اگه میخوای اولین نفری باشی که از فیچرهای جدید و تخفیفات با خبر بشی.</p>
+          <div class="flex mt-8 py-3">
+            <input class="w-[100%] h-11 pr-6 border border-neutral_7 rounded-lg focus:outline-none" type="email" name="email" placeholder="ایمیل" id="email">
+            <a href="mailto:#" class="relative right-[-18%] top-1  h-9 text-center pt-1 w-16 bg-primay text-neutral_1 rounded-md size-[14px]">ارسال</a>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="mt-16 mb-4 text-neutral_8">
+        تمامی حقوق مادی و معنوی این سایت متعلق به کوئرا لیست می‌باشد.
+      </div>
+    </footer>
+
+  </body>
+</html>
