@@ -10,22 +10,25 @@
     <!-- <script src="./tailwinsssd.config.js"></script> -->
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
   </head>
-  <body>
+  <body class="dark:bg-[#060C18] dark:text-neutral_1">
     <header>
       <nav
-        class="m-auto flex justify-between py-[24px] px-[10%] bg-on-primary-light"
+        class="m-auto flex justify-between py-[24px] px-[10%] bg-on-primary-light dark:bg-[#060C18] dark:text-neutral_1"
       >
+        <div class="hidden max-md:inline-block"><button type="button">
+          <img class="dark:invert" src="./assets/menuButton.png" alt="menuButton">
+        </button></div>
         <div class="flex justify-between w-[516px]">
-          <div class="font-semibold">کوئرا لیست</div>
-          <ul class="flex justify-between w-[349px]">
+          <div class="font-semibold max-md:m-auto">کوئرا لیست</div>
+          <ul class="flex justify-between w-[349px] max-md:hidden">
             <li><a href="index.html">صفحه اصلی</a></li>
             <li><a class="text-primay" href="about.html">درباره ما </a></li>
-            <li><a  href="contact.html">ارتباط با ما</a></li>
+            <li><a href="contact.html">ارتباط با ما</a></li>
           </ul>
         </div>
-        <div class="flex gap-[8px]">
+        <div class="flex gap-[8px] max-md:hidden">
           <button
-            class="bg-primay text-on-primary-light w-[167px] h-[40px] py-[8px] px-[24px] rounded-md"
+            class="bg-primay hover:bg-primary-hover-light text-on-primary-light w-[167px] h-[40px] py-[8px] px-[24px] rounded-md"
           >
             <a href="#">ورود به اپلیکیشن</a>
           </button>
@@ -33,110 +36,137 @@
             <img
               src="./assets/darkAndLightIcon.png"
               alt="dark and light button"
-              class="w-[60%] h-[60%] m-auto"
+              class="w-[60%] h-[60%] m-auto dark:invert"
             />
           </button>
         </div>
       </nav>
     </header>
     <main>
-      <div class="px-44">
-        <div class="flex gap-6">
-          <div class="w-1/2 border border-neutral_3 rounded-2xl">
-            <div class="mt-8 px-10">
-              <h1 class="text-neutral_9 font-bold text-4xl">درباره من</h1>
-              <p class="text-neutral_8 text-2xl font-normal mt-3">محمد محمدی</p>
-                <p class="text-neutral_8 leading-8 mt-6">کاربران اندروید می‌توانند اپلیکیشن کوئرالیست را از استورهای معتبر اندروید دانلود نمایند. همچنین کاربران سیستم عامل اپل علاوه بر دانلود نرم‌افزار از اپل‌استور می‌توانند از نسخه مبتنی بر وب آن استفاده نمایند.
-                  <br>
-                  کاربران اندروید می‌توانند اپلیکیشن کوئرالیست را از استورهای معتبر اندروید دانلود نمایند. همچنین کاربران سیستم عامل اپل علاوه بر دانلود نرم‌افزار از اپل‌استور می‌توانند از نسخه مبتنی بر وب آن استفاده نمایند. <br>کاربران اندروید می‌توانند اپلیکیشن کوئرالیست را از استورهای معتبر اندروید دانلود نمایند. همچنین کاربران سیستم عامل اپل علاوه بر دانلود نرم‌افزار از اپل‌استور می‌توانند از نسخه مبتنی بر وب آن استفاده نمایند.</p>
-            </div>
-          </div>
-          <div class="w-1/2 rounded-2xl">
-            <img class="w-[100%] h-[45%]" src="./assets/aboutme.png" alt="aboutme">
-            <div class="flex mt-6 gap-6 border border-neutral_3 p-8 rounded-2xl">
+      <div class="px-44 max-md:w-full max-md:px-4">
+        <div class="flex gap-6 max-md:w-full max-md:flex-wrap mt-28 max-md:mt-6">
+          <div class="hidden max-md:block max-md:w-full max-md:order-5">
+            <div class="flex mt-6 gap-6 border border-neutral_3 p-8 rounded-2xl dark:border-0">
               <div class="flex flex-col w-1/2 gap-6">
-                <div class="w-100% rounded-2xl bg-neutral_3 py-7">
+                <div class="w-100% rounded-2xl bg-neutral_3 py-7 dark:bg-[#0E1E34]">
                   <p class="pr-8 font-semibold text-3xl">۱۳۷۹</p>
                   <p class="text-neutral_8 pr-8 mt-3 font-normal text-lg">سال تولد</p>
                 </div>
-                <div class="w-[100%] rounded-2xl bg-neutral_3 py-7">
+                <div class="w-[100%] rounded-2xl bg-neutral_3 py-7 dark:bg-[#0E1E34]">
                   <p class="pr-8 font-semibold text-3xl">۳.۵</p>
                   <p class="text-neutral_8 pr-8 mt-3 font-normal text-lg">سال تجربه کار</p>
                 </div>
               </div>
               <div class="flex flex-col w-1/2 gap-6">
-                <div class="w-100% rounded-2xl bg-neutral_3 py-7">
+                <div class="w-100% rounded-2xl bg-neutral_3 py-7 dark:bg-[#0E1E34]">
                   <p class="pr-8 font-semibold text-3xl">تهران</p>
                   <p class="text-neutral_8 pr-8 mt-3 font-normal text-lg">محل زندگی</p>
                 </div>
-                <div class="w-100% rounded-2xl bg-neutral_3 py-7">
+                <div class="w-100% rounded-2xl bg-neutral_3 py-7 dark:bg-[#0E1E34]">
                   <p class="pr-12 font-semibold text-3xl">+۱۰</p>
                   <p class="text-neutral_8 pr-12 mt-3 font-normal text-lg">مشارکت در پروژه</p>
                 </div>
               </div>
             </div>
           </div>
+          <div class="w-1/2 border border-neutral_3 rounded-3xl max-md:w-full max-md:order-2 dark:bg-[#0B192D] dark:border-0">
+            <div class="mt-8 px-10 max-md:text-center">
+              <h1 class="text-neutral_9 font-bold text-4xl dark:text-neutral_1">درباره من</h1>
+              <p class="text-neutral_8 text-2xl font-normal mt-3 max-md:font-extrabold max-md:text-3xl">محمد محمدی</p>
+                <p class="text-neutral_8 leading-8 mt-6 dark:text-neutral_4">کاربران اندروید می‌توانند اپلیکیشن کوئرالیست را از استورهای معتبر اندروید دانلود نمایند. همچنین کاربران سیستم عامل اپل علاوه بر دانلود نرم‌افزار از اپل‌استور می‌توانند از نسخه مبتنی بر وب آن استفاده نمایند.
+                  <br>
+                  کاربران اندروید می‌توانند اپلیکیشن کوئرالیست را از استورهای معتبر اندروید دانلود نمایند. همچنین کاربران سیستم عامل اپل علاوه بر دانلود نرم‌افزار از اپل‌استور می‌توانند از نسخه مبتنی بر وب آن استفاده نمایند. <br>کاربران اندروید می‌توانند اپلیکیشن کوئرالیست را از استورهای معتبر اندروید دانلود نمایند. همچنین کاربران سیستم عامل اپل علاوه بر دانلود نرم‌افزار از اپل‌استور می‌توانند از نسخه مبتنی بر وب آن استفاده نمایند.</p>
+            </div>
+          </div>
+          <div class="w-1/2 rounded-3xl max-md:w-full max-md:order-1 dark:border-0">
+            <img class="w-[100%] h-[45%] max-md:h-96" src="./assets/aboutme.png" alt="aboutme">
+            <div class="flex mt-6 gap-6 border border-neutral_3 p-8 rounded-2xl max-md:hidden dark:bg-[#0B192D] dark:border-0">
+              <div class="flex flex-col w-1/2 gap-6">
+                <div class="w-100% rounded-2xl bg-neutral_3 py-7 dark:bg-[#0E1E34]">
+                  <p class="pr-8 font-semibold text-3xl">۱۳۷۹</p>
+                  <p class="text-neutral_8 pr-8 mt-3 font-normal text-lg">سال تولد</p>
+                </div>
+                <div class="w-[100%] rounded-2xl bg-neutral_3 py-7 dark:bg-[#0E1E34]">
+                  <p class="pr-8 font-semibold text-3xl">۳.۵</p>
+                  <p class="text-neutral_8 pr-8 mt-3 font-normal text-lg">سال تجربه کار</p>
+                </div>
+              </div>
+              <div class="flex flex-col w-1/2 gap-6">
+                <div class="w-100% rounded-2xl bg-neutral_3 py-7 dark:bg-[#0E1E34]">
+                  <p class="pr-8 font-semibold text-3xl">تهران</p>
+                  <p class="text-neutral_8 pr-8 mt-3 font-normal text-lg">محل زندگی</p>
+                </div>
+                <div class="w-100% rounded-2xl bg-neutral_3 py-7 dark:bg-[#0E1E34]">
+                  <p class="pr-12 font-semibold text-3xl">+۱۰</p>
+                  <p class="text-neutral_8 pr-12 mt-3 font-normal text-lg">مشارکت در پروژه</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+          </div>
         </div>
       </div>
     </main>
-<footer
-      class="mt-32 flex flex-col px-[160px] justify-center items-center"
-    >
-      <div class="flex m-auto items-center">
-        <img
-          class="inline h-[1px] content-center"
-          src="assets/Vector 23.png"
-          alt="vector"
-        />
-        <p class="mx-4">کوئرالیست</p>
-        <img
-          class="inline h-[1px] content-center"
-          src="assets/Vector 23.png"
-          alt="vector"
-        />
-      </div>
-      <div class="w-[100%] flex justify-between items-center">
-      <div class="flex flex-col justify-between mt-20 w-80">
+    <footer
+    class="mt-32 flex flex-col px-[160px] justify-center items-center max-md:flex-col-reverse max-md:px-0 max-md:mx-5 overflow-hidden"
+  >
+
+    <div class="flex m-auto items-center max-md:order-3 max-md:mx-auto w-3/4 max-md:w-full">
+      <img
+        class="inline h-[1px] content-center max-md:w-full max-md:min-w-0 w-full max-md:mx-0"
+        src="assets/Vector 23.png"
+        alt="vector"
+      />
+      <p class="mx-4 max-md:text-2xl max-md:font-semibold">کوئرالیست</p>
+      <img
+        class="inline h-[1px] content-center max-md:w-full max-md:min-w-0 w-full max-md:mx-0"
+        src="assets/Vector 23.png"
+        alt="vector"
+      />
+    </div>
+    <div class="w-[100%] flex justify-between items-center max-md:order-2 max-md:flex-wrap">
+    <div class="flex flex-col justify-between mt-20 w-80 max-md:order-3 max-md:flex-shrink-0  max-md:w-full">
+      <div>
         <div>
-          <div>
-            <div class="flex mt-6">
-              <div class="pl-4">
-                <img class="w-6" src="/assets/fax.png" alt="fax" />
-              </div>
-              <p>فکس: ۴۴۴۴۵۵۶۶ - ۰۲۱</p>
+          <div class="flex mt-6">
+            <div class="pl-4">
+              <img class="w-6 dark:invert" src="/assets/fax.png" alt="fax" />
             </div>
-          </div>
-          </div>
-          <div>
-            <div class="flex mt-6">
-              <div class="pl-4">
-                <img class="w-6" src="/assets/phone.png" alt="phone" />
-              </div>
-              <p>تلفن پشتیبانی: ۴۴۴۴۵۵۶۶ - ۰۲۱</p>
-            </div>
-          </div>
-          <div>
-            <div class="flex mt-6">
-              <div class="pl-4">
-                <img class="w-8 h-5" src="/assets/location.png" alt="location" />
-              </div>
-              <p>آدرس دفتر مرکزی: پونک - خیابان اشرفی اصفهانی - خیابان صبحدل- بن بست شب بو</p>
-            </div>
+            <p>فکس: ۴۴۴۴۵۵۶۶ - ۰۲۱</p>
           </div>
         </div>
-        <div class="w-80 mt-20">
-          <p class="text-neutral_9 font-bold">با ما در ارتباط باش</p>
-          <p class="text-neutral_9">اگه میخوای اولین نفری باشی که از فیچرهای جدید و تخفیفات با خبر بشی.</p>
-          <div class="flex mt-8 py-3">
-            <input class="w-[100%] h-11 pr-6 border border-neutral_7 rounded-lg focus:outline-none" type="email" name="email" placeholder="ایمیل" id="email">
-            <a href="mailto:#" class="relative right-[-18%] top-1  h-9 text-center pt-1 w-16 bg-primay text-neutral_1 rounded-md size-[14px]">ارسال</a>
+        </div>
+        <div>
+          <div class="flex mt-6">
+            <div class="pl-4">
+              <img class="w-6 dark:invert" src="/assets/phone.png" alt="phone" />
+            </div>
+            <p>تلفن پشتیبانی: ۴۴۴۴۵۵۶۶ - ۰۲۱</p>
+          </div>
+        </div>
+        <div>
+          <div class="flex mt-6">
+            <div class="pl-4">
+              <img class="w-8 h-5 dark:invert" src="/assets/location.png" alt="location" />
+            </div>
+            <p>آدرس دفتر مرکزی: پونک - خیابان اشرفی اصفهانی - خیابان صبحدل- بن بست شب بو</p>
           </div>
         </div>
       </div>
+      <div class="w-80 mt-20 max-md:w-full max-md:mx-auto">
+        <p class="text-neutral_9 font-bold dark:bg-[#060C18] dark:text-neutral_1">با ما در ارتباط باش</p>
+        <p class="text-neutral_9 dark:bg-[#060C18] dark:text-neutral_1">اگه میخوای اولین نفری باشی که از فیچرهای جدید و تخفیفات با خبر بشی.</p>
+        <div class="flex h-12 pr-6 mt-8 py-1 border border-neutral_7 rounded-lg">
+          <input class="w-[100%] my-auto h-9 border-none bg-transparent pt-1 m-0 outline-none focus:outline-none dark:bg-[#060C18] dark:text-neutral_1" type="email" name="email" placeholder="ایمیل" id="email">
+          <a href="mailto:#" class="h-9  ml-1 text-center pt-1 w-16 bg-primay hover:bg-primary-hover-light text-neutral_1 rounded-md size-[14px]">ارسال</a>
+        </div>
       </div>
-      <div class="mt-16 mb-4 text-neutral_8">
-        تمامی حقوق مادی و معنوی این سایت متعلق به کوئرا لیست می‌باشد.
-      </div>
-    </footer>
+    </div>
+    </div>
+    <div class="mt-16 mb-4 text-neutral_8 max-md:text-center max-md:order-1">
+      تمامی حقوق مادی و معنوی این سایت متعلق به کوئرا لیست می‌باشد.
+    </div>
+  </footer>
   </body>
 </html>

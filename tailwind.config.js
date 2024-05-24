@@ -11,7 +11,13 @@ module.exports = {
       'on-background-light':'#191C1E',
       'surface-light': '#FFFFFF',
 
-      
+      'background-dark': '#040810',
+      'on-background-light':'#E6E9EF',
+      'surface-light': '#E6E9EF',
+      'primary-hover-dark': '#6BA4FA',
+      'primary-dark':'#3A86F8',
+
+
       'neutral_1': '#FFFFFF',
       'neutral_2': '#FEFEFE',
       'neutral_3': '#F5F6F8',
@@ -23,9 +29,14 @@ module.exports = {
       'neutral_9': '#646466',
       'neutral_9': '#323233',
       'neutral_9': '#000000',
-
     },
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'custom-gradient': 'linear-gradient(180deg, #EBF3FF -7.33%, #FFFFFF 76.21%)',
+
+        'dark-custom-gradient': 'linear-gradient(180deg, rgba(2, 103, 255, 0.25) -25.32%, rgba(26, 32, 44, 0) 88.96%)',
+      },
+    },
   },
   plugins: [],
 }
